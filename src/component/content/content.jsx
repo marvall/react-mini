@@ -1,9 +1,10 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import style from "./content.module.scss";
 
 const Content = () => {
   return (
-    <content className={style.content}>
+    <div className={style.content}>
       <div>
         <p>
           Lorem dlknvf msmflksm kmskmdfsmdfk msldkmf lskmd lsmdlmsksdfsddf sdfs
@@ -12,16 +13,16 @@ const Content = () => {
       </div>
       <ul>
         <li className={style.item}>
-          <a href="#s">menu item</a>
+          <NavLink to="#s">menu item</NavLink>
         </li>
         <li className={style.item}>
-          <a href="#s">menu item</a>
+          <NavLink to="#d">menu item</NavLink>
         </li>
         <li className={style.item}>
-          <a href="#s">menu item</a>
+          <NavLink to="#g">menu item</NavLink>
         </li>
       </ul>
-    </content>
+    </div>
   );
 };
 

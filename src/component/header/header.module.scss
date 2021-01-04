@@ -1,4 +1,10 @@
 .header {
-  grid-column: 1/4;
-  background-color: #555555;
+  display: grid;
+  grid-template-columns: 3fr 9fr;
+
+  background-color: #191919;
+}
+
+.logo {
+  padding-left: 100px;
 }

@@ -1,0 +1,28 @@
+.nav ul {
+  height: 150px;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+  display: inline-block;
+  list-style: none;
+
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.3em;
+
+    color: #ff69b4;
+    &:hover,
+    &:focus {
+      color: #c71585;
+    }
+  }
+}
