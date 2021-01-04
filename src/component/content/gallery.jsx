@@ -1,8 +1,8 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import style from "./content.module.scss";
+import style from "./gallery.module.scss";
 
-const Content = () => {
+const Gallery = () => {
   return (
     <div className={style.content}>
       <div>
@@ -26,4 +26,4 @@ const Content = () => {
   );
 };
 
-export default Content;
+export default Gallery;
