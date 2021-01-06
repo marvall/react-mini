@@ -3,10 +3,14 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
+//const state = require("./state/state");
+import state from "./state/state.js";
+
+console.log(state);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App state={state} />
   </React.StrictMode>,
   document.getElementById("root")
 );

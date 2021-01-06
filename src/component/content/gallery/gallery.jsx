@@ -1,14 +1,15 @@
 import React from "react";
 import style from "./gallery.module.scss";
 import ItemGallery from "./items";
-const galleryItems = require("./galleryitem.json");
 
-let itemForRender = galleryItems.map((item) => {
-  return (
-    <ItemGallery id={item.id} url={item.url} description={item.description} />
-  );
-});
-const Gallery = () => {
+const Gallery = (props) => {
+  console.log(props);
+  let itemForRender = props.state.gallery.map((item) => {
+    console.log(item);
+    return (
+      <ItemGallery id={item.id} url={item.url} description={item.description} />
+    );
+  });
   return (
     <div className={style.content}>
       <div>

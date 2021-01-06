@@ -10,13 +10,18 @@ import "./scss/util/font.scss";
 import "./scss/app.scss";
 import { BrowserRouter, Route } from "react-router-dom";
 
-function App() {
+function App(props) {
   return (
     <BrowserRouter>
       <div className="app-wrapper">
         <Header />
         <Route exact path="/" component={Banner} />
-        <Route path="/gallery" component={Gallery} />
+        <Route
+          path="/gallery"
+          render={() => {
+            return <Gallery state={props.state} />;
+          }}
+        />
         <Route path="/info" component={Info} />
         <Route path="/contacts" component={Contacts} />
         <Footer />
