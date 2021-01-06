@@ -1,0 +1,24 @@
+.item {
+  display: inline-block;
+  box-sizing: border-box;
+  border: 5px solid black;
+
+  transition: all 0.3s linear 0s;
+  a {
+    padding: 0;
+    margin: 0;
+  }
+  img {
+    display: block;
+  }
+  &:not(:nth-child(3n + 3)) {
+    margin-right: 20px;
+  }
+  &:nth-child(n + 4) {
+    margin-top: 20px;
+  }
+  &:hover,
+  &:focus {
+    transform: scale(1.1);
+  }
+}
