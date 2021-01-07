@@ -18,16 +18,16 @@
   margin: 0;
   font-family: Jura;
   font-size: 40px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.01em;
   font-weight: 700;
   text-align: end;
   color: #9b9898;
 
-  text-shadow: -1px 1px 2px #3f3f3f, 2px 2px 2px #6e6e6e;
+  text-shadow: -1px 1px 2px #3f3f3f, 1px 1px 5px #6e6e6e;
   span {
     color: #f1f1f1;
     font-size: 60px;
 
-    text-shadow: -1px 1px 2px #3f3f3f, 2px 2px 2px #6e6e6e;
+    text-shadow: -1px 1px 2px #3f3f3f, 1px 1px 5px #6e6e6e;
   }
 }
