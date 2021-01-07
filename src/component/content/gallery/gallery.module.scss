@@ -3,9 +3,14 @@
   margin: auto;
   box-sizing: border-box;
 }
-.item {
-  list-style: none;
-  a {
-    color: white;
-  }
+.description {
+  margin-left: auto;
+  width: 600px;
+  color: white;
+  text-align: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.galleryItems {
+  padding: 0 10px 0 10px;
 }

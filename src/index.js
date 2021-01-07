@@ -1,19 +1,9 @@
-import React from "react";
-import ReactDOM from "react-dom";
 import "./index.css";
-import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-//const state = require("./state/state");
 import state from "./state/state.js";
+import renderEntriesTree from "./render";
 
-console.log(state);
-
-ReactDOM.render(
-  <React.StrictMode>
-    <App state={state} />
-  </React.StrictMode>,
-  document.getElementById("root")
-);
+renderEntriesTree(state);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

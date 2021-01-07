@@ -9,8 +9,8 @@ const ItemGallery = (props) => {
         <img
           src={process.env.PUBLIC_URL + props.url}
           alt={props.description}
-          width="300px"
-          height="370px"
+          width="380px"
+          height="475px"
         />
       </NavLink>
     </li>
