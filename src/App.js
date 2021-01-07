@@ -16,7 +16,10 @@ function App(props) {
       <div className="app-wrapper">
         <Header />
         <Route exact path="/" component={Banner} />
-        <Route path="/gallery" render={() => <Gallery state={props.state} />} />
+        <Route
+          path="/gallery"
+          render={() => <Gallery state={props.state.getState()} />}
+        />
         <Route path="/info" component={Info} />
         <Route path="/contacts" component={Contacts} />
         <Footer />
